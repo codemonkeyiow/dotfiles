@@ -85,10 +85,10 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -188,8 +188,11 @@ client.background       #ffffff
 # finds out, if available)
 bar {
   status_command i3status
+  font pango:JetBrainsMono 8
+  separator_symbol ":"
 	colors {
 		statusline $cream
+    separator #ff00ff
 		#			border	background	text
 		focused_workspace	$light	$main		$cream
 		inactive_workspace	$dark	$black		$dark
