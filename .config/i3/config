@@ -44,7 +44,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-floating_minimum_size 1600 x 900
+floating_minimum_size 400 x 200
 floating_maximum_size 1900 x 1000
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
@@ -54,6 +54,7 @@ tiling_drag modifier titlebar
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec kitty
+bindsym $mod+Shift+Return scratchpad show
 bindsym $mod+Tab scratchpad show
 bindsym $mod+Shift+Tab move scratchpad
 
