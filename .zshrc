@@ -7,7 +7,7 @@ unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/codemonkey/.zshrc'
+zstyle :compinstall filename '/home/user/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -21,7 +21,7 @@ alias l='ls --color=auto -lah'
 alias grep='grep --color=auto'
 alias vi='nvim'
 alias vim='nvim'
-alias pacref='sudo reflector -c GB --save /etc/pacman.d/mirrorlist'
+alias pacref='sudo reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
 alias cp='cp -v'
 alias mv='mv -v'
 alias rm='rm -v'
@@ -30,3 +30,7 @@ alias pbin="curl -F 'file=@-' 0x0.st"
 alias cld="clang++ --debug"
 alias brt="xgamma -rgamma 2 -ggamma 2 -bgamma 2"
 alias ubrt="xgamma -rgamma 1 -ggamma 1 -bgamma 1"
+alias pacins="sudo pacman -Sy"
+alias capesc="setxkbmap -option caps:escape"
+alias gcam="git commit -am"
+alias gp="git push"
