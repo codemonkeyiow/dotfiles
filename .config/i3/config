@@ -51,6 +51,8 @@ floating_maximum_size 1900 x 1000
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
+bindsym $mod+Shift+d exec "setxkbmap -option caps:escape"
+
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec kitty
@@ -146,6 +148,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+bindsym $mod+shift+s exec "scrot -s"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
