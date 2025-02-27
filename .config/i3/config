@@ -210,3 +210,5 @@ bar {
 		urgent_workspace	$err	$err		$high
 	}
 }
+
+for_window [instance="Godot_Engine"] floating enable
