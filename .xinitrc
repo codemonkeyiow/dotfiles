@@ -1,5 +1,4 @@
 xset -dpms s off &
 setxkbmap -option caps:escape &
-eval "$(ssh-agent -s)" &
-ssh-add ~/.ssh/id_ed25519 &
+redshift -l 50.693848:-1.304734 &
 exec i3
