@@ -29,9 +29,11 @@ alias rm='rm -v'
 alias mkdir='mkdir -pv'
 alias pbin="curl -F 'file=@-' 0x0.st"
 alias cld="clang++ --debug"
+alias cla="clang -std=c99 -Wall -Werror -fsanatize=address"
 alias brt="xgamma -rgamma 2 -ggamma 2 -bgamma 2"
 alias ubrt="xgamma -rgamma 1 -ggamma 1 -bgamma 1"
 alias pacins="sudo pacman -Sy"
 alias capesc="setxkbmap -option caps:escape"
 alias gcam="git commit -am"
 alias gp="git push"
+alias shift="redshift -l 50.693848:-1.304734 &"
