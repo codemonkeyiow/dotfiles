@@ -15,14 +15,14 @@ compinit
 # End of lines added by compinstall
 
 precmd() { print -rP "%F{blue}%D|%* %F{magenta}%n@%m %F{cyan}%d%f" }
-export PROMPT="%F{red} ~%f "
+export PROMPT="%F{red} λ%f "
 
 alias ls='ls --color=auto'
 alias l='ls --color=auto -lAh'
 alias grep='grep --color=auto'
 alias vi='nvim'
 alias vim='nvim'
-alias pacref='sudo reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
+alias pacref='sudo reflector -c gb --latest 20 --sort rate --save /etc/pacman.d/mirrorlist'
 alias cp='cp -v'
 alias mv='mv -v'
 alias rm='rm -v'
