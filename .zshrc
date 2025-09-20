@@ -19,6 +19,7 @@ export PROMPT="%F{red} λ%f "
 
 alias ls='ls --color=auto'
 alias l='ls --color=auto -lAh'
+alias lt='ls --color=auto -lAhtr --full-time'
 alias grep='grep --color=auto'
 alias vi='nvim'
 alias vim='nvim'
@@ -36,4 +37,5 @@ alias pacins="sudo pacman -Sy"
 alias capesc="setxkbmap -option caps:escape"
 alias gcam="git commit -am"
 alias gp="git push"
+alias gc1="git clone --depth 1"
 alias shift="redshift -l 50.693848:-1.304734 &"
